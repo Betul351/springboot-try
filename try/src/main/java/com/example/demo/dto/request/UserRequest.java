@@ -18,6 +18,7 @@ public class UserRequest {
     @Email(message = "Lütfen geçerli bir e-posta giriniz.")
     private String email;
 
+    @NotBlank
     @Size(min = 8, message = "Şifreniz en az 8 karakter içermelidir.")
     private String password;
 
